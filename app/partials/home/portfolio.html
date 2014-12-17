@@ -1,0 +1,21 @@
+<div class="col-md-12 col-lg-8 col-lg-offset-2">
+  <!--  CSS -->
+  <link rel="stylesheet" href="app/css/home/portfolio.css">
+
+  <div class="row each_project" ng-repeat="p in ProjData" ng-click="go_to_link(p.link)">
+
+    <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs projIndexContainer">
+      {{$index+1}}
+    </div>
+
+    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 projImageContainer">
+      <img class="projImage" ng-src="{{p.image}}"/>
+    </div>
+
+    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 projTextContainer">
+      <p class="projTextTitle">{{p.title}}</p>
+      <p class="projTextDate">{{p.date}}</p>
+      <p class="projTextDescription">{{p.description}}</p>
+    </div>
+  </div>
+</div>

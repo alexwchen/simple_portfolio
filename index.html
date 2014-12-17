@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html ng-app="alexBootstrap" lang="en"> <!--<![endif]-->
+<head>
+    <title>alexwchen</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <!-- <link rel="stylesheet" href="app/css/style.css"> -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-app="alexBootstrap">
+  <ui-view></ui-view>
+</body>
+
+<!-- App Related -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/firebase/firebase.js"></script>
+<script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<script src="app/js/app.js"></script>
+<script src="app/js/controllers/home/homePortfolio.js"></script>
+<script src="app/js/directives/home_dir.js"></script>
+<script src="app/js/services/home/DatabaseService.js"></script>
+
+
+
+<!-- <script src="app/js/controllers/landing/NavController.js"></script>
+<script src="app/js/controllers/landing/TopController.js"></script>
+<script src="app/js/controllers/landing/CalltoactionController.js"></script>
+<script src="app/js/controllers/referral/stateReferralController.js"></script>
+<script src="app/js/controllers/pricing/pricingController.js"></script>
+<script src="app/js/services/referral/EmailStorageService.js"></script>
+<script src="app/js/directives/landing_dir.js"></script>
+<script src="app/js/directives/feature_dir.js"></script>
+<script src="app/js/directives/pricing_dir.js"></script> -->
+</html>

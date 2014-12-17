@@ -1,0 +1,54 @@
+#full_head{
+  background-color:#2f92d5;
+  color:white;
+}
+
+#full_head_container{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+#profile_pic{
+  width:90px;
+  height:90px;
+  border-radius: 25px;
+}
+
+#profile_name{
+  font-size:30px;
+  line-height:1;
+}
+
+#profile_tagline{
+  font-size:15px;
+  font-weight:300;
+  color:#bfdbed;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+#header_image_container{
+  text-align:center;
+}
+#header_text_container{
+  text-align:center;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  #header_image_container{
+    text-align:right;
+  }
+  #header_text_container{
+    text-align:left;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+}

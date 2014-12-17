@@ -1,0 +1,70 @@
+.each_project{
+  border-top:1px solid grey;
+  padding: 5px 0px;
+}
+
+.each_project:hover{
+  cursor:pointer;
+  background-color:#bfdbed;
+}
+
+/*Index eg. 1,2,3,4*/
+.projIndexContainer{
+  text-align:center;
+  font-size:30px;
+  padding-top:40px;
+  margin-right:0px;
+}
+
+/* Right */
+.projTextContainer{
+  padding:5px 15px;
+  margin-left:0px;
+}
+.projTextTitle{
+  font-size:20px;
+  color:#2f92d5;
+}
+.projTextDate{
+  margin:0px;
+  color:#8b8f8f;
+}
+.projTextDescription{
+  color:#8b8f8f;
+}
+/* Left */
+.projImageContainer{
+  padding:5px 10px;
+  margin-left:0px;
+  text-align:center;
+}
+
+.projImage{
+  width:100%;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .projTextContainer{ padding:0px; margin-left:40px;}
+  .projImageContainer{ padding:0px; margin-left:0px;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .projTextContainer{margin-left:10px;}
+}
+/* Medium-Large devices (large desktops, 1100px and up) */
+@media screen and (min-width: 1100px) {
+  .projTextContainer{margin-left:0px;}
+}
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .projTextContainer{margin-left:40px;}
+}
+/* Extra Large devices (large desktops, 1300px and up) */
+@media screen and (min-width: 1300px) {
+  .projTextContainer{margin-left:25px;}
+}
