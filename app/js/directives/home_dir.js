@@ -28,12 +28,10 @@
       templateUrl: '/app/partials/home/portfolio.html',
       replace: true,
       scope: {},
-      controller:"PortfolioController",
-      link:function(){
-        // $('body').flowtype();
-      }
+      controller:"PortfolioController"
     };
   })
+
   .directive('homeFooter', function(){
     return {
       restrict: 'E',

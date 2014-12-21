@@ -5,14 +5,24 @@
   .config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
-    .state('home', {
-        url: '/',
+    .state('projects', {
+        url: '/projects',
         templateUrl: '/app/partials/home/skeleton.html',
-        controller:function(){
+        controller:function($rootScope){
+          $rootScope.dataType = "project";
         }
+    })
+
+    .state('publications', {
+      url: '/publications',
+      templateUrl: '/app/partials/home/skeleton.html',
+      controller:function($rootScope){
+        $rootScope.dataType = "publication";
+      }
     });
 
-    $urlRouterProvider.otherwise("/");
+
+    $urlRouterProvider.otherwise("/projects");
   });
 
   // ---------------------

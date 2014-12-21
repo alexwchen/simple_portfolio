@@ -4,7 +4,7 @@
 
   angular.module('alexBootstrap')
 
-  .factory('DatabaseService',['$state', '$rootScope', function($state, $rootScope){
+  .factory('ProjectService',['$state', '$rootScope', function($state, $rootScope){
 
     var projectData = [
     {
