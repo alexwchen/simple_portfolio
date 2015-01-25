@@ -24,6 +24,12 @@
         templateUrl: '/app/partials/contact/skeleton.html'
       })
 
+      .state('about', {
+        url: '/about',
+        templateUrl: '/app/partials/about/skeleton.html'
+      })
+
+
       .state('publications', {
         url: '/publications',
         templateUrl: '/app/partials/home/skeleton.html',

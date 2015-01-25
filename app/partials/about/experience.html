@@ -1,0 +1,22 @@
+<div class="col-md-12 col-lg-8 col-lg-offset-2">
+  <!--  CSS -->
+  <link rel="stylesheet" href="app/css/about/experience.css">
+
+  <div class="col-md-12 section_title">
+    TIMELINE
+  </div>
+  <div class="col-md-12 clickable" ng-repeat="exp in expData" ng-click="toggleDetail($index)">
+    <div class="col-md-10 section_text">
+      <p><b>{{exp.title}}</b></p>
+      <p>{{exp.sub}}</p>
+    </div>
+    <div class="col-md-2 section_text">
+      <p>{{exp.time}}</p>
+    </div>
+    <div class="col-md-12" ng-show="displayFlag[$index]">
+      <ul>
+        <li ng-repeat="pt in exp.points">{{pt}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
