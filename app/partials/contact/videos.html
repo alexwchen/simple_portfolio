@@ -1,0 +1,13 @@
+<div class="col-md-12 col-lg-8 col-lg-offset-2">
+
+  <!--  CSS -->
+  <link rel="stylesheet" href="app/css/contact/videos.css">
+
+  <div class="col-md-12 video_title">
+    LATEST VEDIOS, TALKS, DEMOS, PRESENTATIONS
+  </div>
+  <div class="col-md-4 col-sm-6 video_clip" ng-repeat="vid in recentVideos">
+    <iframe width="280" height="157" ng-src="{{getIframeSrc(vid.link)}}" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+</div>

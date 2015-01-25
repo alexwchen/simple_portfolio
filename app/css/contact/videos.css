@@ -1,0 +1,13 @@
+.video_title{
+  margin-top:50px;
+  color:#377bb5;
+  border-bottom:1px dotted #8b8f8f;
+  text-align:center;
+  font-size:16px;
+  padding:10px;
+}
+
+.video_clip{
+  text-align:center;
+  padding-top:20px;
+}

@@ -12,6 +12,8 @@
     "angularfire": "~0.9.x",
     "bootstrap": "~3.3.1",
     "angular-ui-router": "~0.2.13",
-    "Flowtype.js": "~1.1.0"
+    "Flowtype.js": "~1.1.0",
+    "bootstrap-social": "~4.8.0",
+    "font-awesome": "~4.3.0"
   }
 }
