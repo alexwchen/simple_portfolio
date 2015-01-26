@@ -1,6 +1,9 @@
 #footer{
+  width:100%;
   background-color:#2f92d5;
   text-align:center;
   padding:10px;
   color:#bfdbed;
+  max-height:30px;
+  display:inline-block;
 }

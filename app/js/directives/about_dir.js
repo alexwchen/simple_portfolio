@@ -22,14 +22,23 @@
       controller:function($scope, expService){
         $scope.expData = expService.expData;
 
-        // init arr
-        $scope.displayFlag = [];
-        for (var i=0;i<$scope.expData.length;i++){
-          $scope.displayFlag[i]=0;
+
+        // Toogle Points
+        $scope.techFlag = [];
+        for (var i=0;i<$scope.expData.techData.length;i++){
+          $scope.techFlag[i]=0;
         }
 
-        $scope.toggleDetail = function(idx){
-          $scope.displayFlag[idx] = 1 - $scope.displayFlag[idx];
+        $scope.commFlag = [];
+        for (var i=0;i<$scope.expData.commData.length;i++){
+          $scope.commFlag[i]=0;
+        }
+
+        $scope.techToggleDetail = function(idx){
+          $scope.techFlag[idx] = 1 - $scope.techFlag[idx];
+        }
+        $scope.commToggleDetail = function(idx){
+          $scope.commFlag[idx] = 1 - $scope.commFlag[idx];
         }
       }
     };

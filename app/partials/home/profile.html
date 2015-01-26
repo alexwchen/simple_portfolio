@@ -5,11 +5,11 @@
   <div id="full_head_container" class="container">
     <div class="row">
       <div id="header_image_container" class='col-xs-12 col-sm-5 col-md-5'>
-        <img id="profile_pic" src="app/assets/img/profile.jpg"/>
+        <img id="profile_pic" ng-src={{profileData.img_link}}/>
       </div>
       <div id="header_text_container" class='col-xs-12 col-sm-7 col-md-7'>
-        <h1 id="profile_name">Alexander Chen</h1>
-        <p  id="profile_tagline">Computer Engineering / University of Toronto</p>
+        <h1 id="profile_name">{{profileData.name}}</h1>
+        <p  id="profile_tagline">{{profileData.school_and_program}}</p>
       </div>
     </div>
   </div>

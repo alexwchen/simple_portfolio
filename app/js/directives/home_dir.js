@@ -9,7 +9,10 @@
       restrict: 'E',
       templateUrl: '/app/partials/home/profile.html',
       replace: true,
-      scope: {}
+      scope: {},
+      controller:function($scope, ProfileService){
+        $scope.profileData = ProfileService.profileData;
+      }
     };
   })
 

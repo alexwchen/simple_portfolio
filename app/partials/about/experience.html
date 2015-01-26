@@ -2,6 +2,7 @@
   <!--  CSS -->
   <link rel="stylesheet" href="app/css/about/experience.css">
 
+  <!--
   <div class="col-md-12 section_title">
     TIMELINE
   </div>
@@ -19,4 +20,54 @@
       </ul>
     </div>
   </div>
+  -->
+  <div class="col-md-12 section_title">
+    TECHNICAL EXPERIENCE
+  </div>
+  <div class="col-md-12 clickable" ng-repeat="exp in expData.techData" ng-click="techToggleDetail($index)">
+    <div class="col-md-10 section_text">
+      <p><b>{{exp.title}}</b></p>
+      <p>{{exp.sub}}</p>
+    </div>
+    <div class="col-md-2 section_text">
+      <p>{{exp.time}}</p>
+    </div>
+    <div class="col-md-12" ng-show="techFlag[$index]">
+      <ul>
+        <li ng-repeat="pt in exp.points">{{pt}}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-md-12 section_title">
+    COMMUNICATION EXPERIENCE
+  </div>
+  <div class="col-md-12 clickable" ng-repeat="exp in expData.commData" ng-click="commToggleDetail($index)">
+    <div class="col-md-10 section_text">
+      <p><b>{{exp.title}}</b></p>
+      <p>{{exp.sub}}</p>
+    </div>
+    <div class="col-md-2 section_text">
+      <p>{{exp.time}}</p>
+    </div>
+    <div class="col-md-12" ng-show="commFlag[$index]">
+      <ul>
+        <li ng-repeat="pt in exp.points">{{pt}}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-md-12 section_title">
+    AFFILIATIONS AND CERTIFICATIONS
+  </div>
+  <div class="col-md-12 affliated_section" ng-repeat="exp in expData.affData" ng-click="commToggleDetail($index)">
+    <div class="col-md-10 section_text">
+      <p><b>{{exp.title}}</b></p>
+      <p>{{exp.sub}}</p>
+    </div>
+    <div class="col-md-2 section_text">
+      <p>{{exp.time}}</p>
+    </div>
+  </div>
+
 </div>
