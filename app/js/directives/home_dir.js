@@ -11,6 +11,7 @@
       replace: true,
       scope: {},
       controller:function($scope, ProfileService){
+        console.log(ProfileService)
         $scope.profileData = ProfileService.profileData;
       }
     };
