@@ -8,12 +8,12 @@
   "dependencies": {
     "angular": "1.3.x",
     "html5-boilerplate": "~4.3.0",
-    "firebase": "~2.0.x",
+    "firebase": "~2.1.x",
     "angularfire": "~0.9.x",
     "bootstrap": "~3.3.1",
     "angular-ui-router": "~0.2.13",
     "Flowtype.js": "~1.1.0",
     "bootstrap-social": "~4.8.0",
-    "font-awesome": "~4.3.0"
+    "font-awesome": "~4.3.x"
   }
 }
