@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('alexBootstrap', ["ui.router", "firebase"])
+  angular.module('alexBootstrap', ["ui.router", "firebase", "ngAnimate"])
   .config(function($stateProvider, $urlRouterProvider, $sceDelegateProvider) {
 
     $sceDelegateProvider.resourceUrlWhitelist([
@@ -40,7 +40,7 @@
 
 
     $urlRouterProvider.otherwise("/projects");
-  });
+  })
 
   // ---------------------
   // setup configuration
@@ -52,5 +52,5 @@
   //
   // })
 
-  // .constant('FirebaseRoot', 'https://paymentlanding.firebaseio.com/');
+  .constant('FirebaseRoot', 'https://alexwchen.firebaseio.com/');
 })();

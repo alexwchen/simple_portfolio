@@ -1,0 +1,32 @@
+<div class="col-md-12 col-lg-8 col-lg-offset-2">
+
+  <!--  CSS -->
+  <link rel="stylesheet" href="app/css/home/form.css">
+
+  <div class="row form_box" form-container="{{whichQuestion}}">
+
+    <!--  FIRST QUESTION -->
+    <p first-question="{{whichQuestion}}">I am making an app that let you create a hacker portfolio just like this one (will charge $20 per YEAR)? Will you be interested? </p>
+    <div class="button_container">
+      <div class="green_box" ng-click="yes()" first-question="{{whichQuestion}}">Yes, I want it!</div>
+      <div class="red_box" ng-click="no()" first-question="{{whichQuestion}}">No</div>
+    </div>
+
+    <!--  NO QUESTION -->
+    <p class="hide" no-question="{{whichQuestion}}">Why Not?</p>
+    <div class="button_container hide" no-question="{{whichQuestion}}">
+      <div class="red_box" ng-click="no_one()">Too Expensive!</div>
+      <div class="red_box" ng-click="no_two()">I want to built it myself!</div>
+      <div class="red_box" ng-click="no_three()">I don’t want a portfolio</div>
+    </div>
+
+    <!--  YES QUESTION -->
+    <div class="row" style="text-align:center">
+      <input type="email" class="hide input_box" id="exampleInputEmail1" placeholder="Ex. alex@gmail.com" yes-question="{{whichQuestion}}" ng-model="userDataObj.email">
+    </div>
+    <div class="button_container hide" yes-question="{{whichQuestion}}">
+      <div class="green_box" ng-click="submit()" style="width:400px;">Submit, no spamming I promise</div>
+    </div>
+
+  </div>
+</div>
